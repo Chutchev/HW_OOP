@@ -35,7 +35,6 @@ class Worker(object):
         self._salary = float(self.salary)/float(self.normal_hour) * float(self._hour)
 
 
-
 def main():
     workers = fill_list_workers()
     for worker in workers:
