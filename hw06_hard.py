@@ -26,7 +26,7 @@ class Worker(object):
     def __str__(self):
         return f"Рабочий: {self.name} {self.second_name}. Зарплата по договору: {self.salary}. Должность: " \
                f"{self.postOffice}. Норма часов: {self.normal_hour}. Отработано: {self._hour}. Зарплата в этом" \
-               f" месяце: {self._salary}"
+               f" месяце: {round(self._salary, 2)}"
 
     def add_hour_for_worker(self, hour):
         self._hour = hour
